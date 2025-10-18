@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Daftar Kegiatan Harian</title>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <header>
+      <h1>Kegiatan yang Harus Dilakukan</h1>
+    </header>
+    <main>
+      <section id="input-section">
+        <form id="task-form">
+          <label for="task-description">Kegiatan:</label>
+          <input
+            type="text"
+            id="task-description"
+            name="task-description"
+            placeholder="Tambahkan kegiatan..."
+            required
+          />
+          <label for="task-duedate">Tanggal Selesai:</label>
+          <input type="date" id="task-duedate" name="task-duedate" required />
+          <button type="submit">Tambah Kegiatan</button>
+        </form>
+      </section>
+
+      <section id="filter-section">
+        <div class="filter-buttons">
+          <button data-filter="all" class="active">Semua</button>
+          <button data-filter="pending">Belum Selesai</button>
+          <button data-filter="completed">Selesai</button>
+        </div>
+      </section>
+
+      <section id="task-list-section">
+        <ul id="task-list">
+          <!-- Daftar kegiatan akan ditambahkan di sini oleh JavaScript -->
+        </ul>
+        <div id="empty-list-message">Tidak ada kegiatan yang ditemukan.</div>
+      </section>
+    </main>
+    <footer>
+      <p>&copy; 2025 Daftar Kegiatan Harian. Dibuat oleh MUHAMMAD FAIRUZ</p>
+    </footer>
+    <script src="js/script.js"></script>
+  </body>
+</html>
